@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Wedding Planning & Decor | Alankaran Events Hyderabad</title>
+<meta name="description" content="Looking for a professional wedding planner in Hyderabad? Alankaran offers luxury wedding planning, elegant decor & complete event management. Book a free consultation today!">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Tangerine:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',sans-serif;color:#2b1e10;background:#fdf6eb;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+:root{
+  --gold:#c8aa77;
+  --gold-dark:#a98847;
+  --gold-light:#e6cf9d;
+  --gold-pale:#f1e0bf;
+  --cream:#ebdcc6;
+  --cream-light:#fdf6eb;
+  --cream-soft:#f7eedd;
+  --ink:#2b1e10;
+  --ink-soft:#5a4a36;
+  --maroon:#7a1d2e;
+  --white:#ffffff;
+  --shadow:0 10px 40px rgba(43,30,16,.12);
+  --shadow-lg:0 25px 70px rgba(43,30,16,.18);
+  --shadow-gold:0 12px 32px rgba(200,170,119,.35);
+}
+
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Cormorant Garamond',serif}
+.script{font-family:'Cookie',cursive}
+.tangerine{font-family:'Tangerine',cursive;font-weight:700}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 30px;border-radius:6px;font-weight:600;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;transition:all .35s cubic-bezier(.4,0,.2,1);white-space:nowrap;position:relative;overflow:hidden;font-family:'Poppins',sans-serif}
+.btn svg{width:16px;height:16px}
+.btn-primary{background:var(--gold);color:#fff;box-shadow:var(--shadow-gold)}
+.btn-primary:hover{background:var(--gold-dark);transform:translateY(-3px);box-shadow:0 16px 38px rgba(200,170,119,.55);color:#fff}
+.btn-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7);backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
+.btn-outline:hover{background:#fff;color:var(--ink);border-color:#fff;transform:translateY(-3px)}
+.btn-dark{background:var(--ink);color:var(--gold-light)}
+.btn-dark:hover{background:var(--maroon);color:#fff;transform:translateY(-3px)}
+.btn-gold{background:var(--gold);color:var(--ink);border:1.5px solid var(--gold)}
+.btn-gold:hover{background:var(--ink);color:var(--gold-light);border-color:var(--ink);transform:translateY(-3px)}
+.btn-lg{padding:18px 40px;font-size:15px}
+
+/* ---------- Announcement bar ---------- */
+.announce{background:var(--ink);color:var(--gold-light);text-align:center;font-size:13px;padding:11px 16px;letter-spacing:.6px;font-weight:500;position:relative;overflow:hidden}
+.announce::before,.announce::after{content:"";position:absolute;top:0;bottom:0;width:80px;background:linear-gradient(90deg,var(--ink),transparent);z-index:1}
+.announce::before{left:0}
+.announce::after{right:0;transform:scaleX(-1)}
+.announce-track{display:inline-block;animation:slide 30s linear infinite;white-space:nowrap}
+.announce-track span{margin:0 30px;display:inline-block}
+.announce-track span::before{content:"❀";margin-right:14px;color:var(--gold)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Header ---------- */
+.header{position:absolute;top:0;left:0;right:0;z-index:50;padding:0 24px}
+.header.scrolled{position:fixed;top:0;background:rgba(253,246,235,.97);backdrop-filter:blur(14px);box-shadow:0 4px 24px rgba(0,0,0,.08);padding:8px 24px}
+.header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo img{max-height:64px;width:auto;transition:max-height .3s,filter .3s;filter:brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,.4))}
+.header.scrolled .logo img{max-height:52px;filter:none}
+.header-actions{display:flex;gap:12px;align-items:center}
+.header-call{background:rgba(255,255,255,.5);color:var(--ink);border:1.5px solid rgba(255,255,255,.7);backdrop-filter:blur(8px)}
+.header-call:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}
+.header.scrolled .header-call{background:transparent;border-color:var(--gold);color:var(--ink)}
+.header.scrolled .header-call:hover{background:var(--gold);color:#fff}
+.header-deets{background:var(--gold);color:#fff}
+.header-deets:hover{background:var(--ink);color:var(--gold-light);transform:translateY(-2px)}
+@media(max-width:780px){
+  .header{top:0;padding:0 16px}
+  .header-inner{padding:10px 0}
+  .logo img{max-height:48px}
+  .header-call span{display:none}
+  .header-deets{font-size:11px;padding:10px 16px;letter-spacing:.5px}
+  .header-call{padding:10px 14px}
+}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#1a120a;padding:0}
+.hero-slides{position:absolute;inset:0;z-index:1}
+.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease,transform 8s ease-out}
+.hero-slide.active{opacity:1;transform:scale(1.05)}
+.hero-slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,4,.5) 0%,rgba(20,12,4,.2) 30%,rgba(20,12,4,.85) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 24px 80px;width:100%;max-width:1280px;margin:0 auto}
+.hero-content{max-width:780px}
+.hero-tag{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1px solid rgba(230,207,157,.4);backdrop-filter:blur(8px);color:var(--gold-light);padding:9px 20px;border-radius:999px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;margin-bottom:24px}
+.hero-tag::before{content:"";width:6px;height:6px;background:var(--gold-light);border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.3)}}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.6rem,6.5vw,5.8rem);line-height:1;color:#fff;margin-bottom:24px;letter-spacing:-1px}
+.hero h1 .script{display:block;font-family:'Tangerine',cursive;color:var(--gold-light);font-weight:700;font-size:.85em;line-height:1;margin-bottom:6px;letter-spacing:0}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.4rem);max-width:600px;color:#f1e3c5;margin-bottom:38px;font-weight:300;font-style:italic;line-height:1.6}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-dots{position:absolute;bottom:30px;right:30px;display:flex;gap:8px;z-index:3}
+.hero-dots button{width:40px;height:3px;background:rgba(255,255,255,.35);border-radius:0;transition:all .35s}
+.hero-dots button.active{background:var(--gold-light);width:60px}
+.hero-scroll{position:absolute;left:30px;bottom:30px;z-index:3;color:#fff;display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:2px;text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(180deg);font-weight:500;opacity:.7}
+.hero-scroll::after{content:"";width:1px;height:60px;background:rgba(255,255,255,.5)}
+@media(max-width:780px){.hero-scroll{display:none}.hero-dots{left:24px;right:auto;bottom:24px}.hero{min-height:90vh}}
+
+/* ---------- Marquee CTA ---------- */
+.marquee-cta{background:var(--gold);padding:0;overflow:hidden;cursor:pointer}
+.marquee-cta a{display:block;color:var(--ink)}
+.marquee-track{display:flex;gap:50px;padding:22px 0;animation:scroll-left 22s linear infinite;white-space:nowrap;width:max-content}
+.marquee-track span{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:24px}
+.marquee-track span::after{content:"❦";color:var(--maroon);font-size:14px}
+@keyframes scroll-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Section base ---------- */
+section{padding:110px 0;position:relative}
+@media(max-width:780px){section{padding:70px 0}}
+.section-head{text-align:center;margin-bottom:64px;position:relative}
+.eyebrow{display:inline-block;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold-dark);font-weight:600;margin-bottom:18px}
+.eyebrow.with-line{position:relative;padding:0 60px}
+.eyebrow.with-line::before,.eyebrow.with-line::after{content:"";position:absolute;top:50%;width:40px;height:1px;background:var(--gold)}
+.eyebrow.with-line::before{left:0}
+.eyebrow.with-line::after{right:0}
+.section-head h2{font-family:'Tangerine',cursive;font-weight:700;font-size:clamp(3rem,6vw,5.5rem);line-height:1;color:var(--ink);margin-bottom:14px}
+.section-head h2 small{display:block;font-family:'Cormorant Garamond',serif;font-size:.32em;color:var(--ink);font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-top:18px;line-height:1.4}
+.section-head .lead{max-width:720px;margin:18px auto 0;color:var(--ink-soft);font-size:16.5px;line-height:1.8}
+.flourish{display:flex;align-items:center;justify-content:center;gap:18px;color:var(--gold);margin:20px auto 24px;font-size:20px}
+.flourish::before,.flourish::after{content:"";width:55px;height:1px;background:var(--gold)}
+
+/* ---------- About ---------- */
+.about{background:var(--cream-light);position:relative;overflow:hidden}
+.about::before{content:"";position:absolute;top:0;left:-100px;width:380px;height:600px;background:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/peacock-left-image.webp') no-repeat center/contain;opacity:.28;pointer-events:none;z-index:0}
+.about::after{content:"";position:absolute;top:60px;right:-40px;width:180px;height:180px;background:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/01/bird1.png') no-repeat center/contain;opacity:.5;pointer-events:none;transform:scaleX(-1)}
+.about-inner{position:relative;z-index:1;max-width:880px;margin:0 auto;text-align:center}
+.about h2{font-family:'Tangerine',cursive;font-weight:700;font-size:clamp(3.5rem,7vw,6rem);color:var(--ink);line-height:1;margin-bottom:30px}
+.about-arch{background:linear-gradient(180deg,#fff 0%,#fdf6eb 100%);border:2px solid var(--gold);padding:60px 60px 50px;position:relative;border-radius:100% 100% 8px 8px/30% 30% 8px 8px;box-shadow:var(--shadow);margin-top:20px}
+.about-arch::before{content:"";position:absolute;top:14px;left:14px;right:14px;bottom:14px;border:1px solid var(--gold);border-radius:100% 100% 4px 4px/40% 40% 4px 4px;pointer-events:none;opacity:.5}
+.about-arch p{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--ink);line-height:1.8;margin-bottom:18px;font-weight:400}
+.about-arch p:last-of-type{margin-bottom:30px}
+.about-cta{margin-top:14px}
+@media(max-width:780px){
+  .about-arch{padding:40px 24px 36px;border-radius:60% 60% 8px 8px/20% 20% 8px 8px}
+  .about::before{opacity:.15;width:200px;background-position:left top}
+}
+
+/* ---------- Couple decorative row ---------- */
+.couples{padding:0;background:var(--cream);overflow:hidden}
+.couples-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:60px 24px}
+@media(max-width:780px){.couples-grid{grid-template-columns:1fr;gap:30px;padding:50px 24px}}
+.couple-frame{position:relative;display:flex;align-items:center;justify-content:center;padding:20px}
+.couple-frame img{width:100%;max-width:340px;height:auto;transition:transform .6s ease}
+.couple-frame:hover img{transform:translateY(-10px) scale(1.03)}
+
+/* ---------- Planning Mood ---------- */
+.planning{background:var(--cream-light);position:relative;text-align:center;overflow:hidden}
+.planning::before{content:"";position:absolute;bottom:0;right:0;width:300px;height:400px;background:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/peacock-left-image.webp') no-repeat center/contain;opacity:.18;pointer-events:none;transform:scaleX(-1)}
+.planning-inner{position:relative;z-index:1;max-width:920px;margin:0 auto}
+.planning h2{font-family:'Tangerine',cursive;font-weight:700;font-size:clamp(3.5rem,7vw,5.5rem);color:var(--ink);line-height:1;margin-bottom:36px}
+.planning p{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--ink);line-height:1.8;margin-bottom:22px;font-weight:400}
+.planning-cta{margin-top:42px;display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap}
+.golden-divider{display:flex;align-items:center;justify-content:center;margin:40px 0 60px;gap:20px;flex-wrap:wrap}
+.golden-divider .line{flex:1;max-width:280px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.golden-divider .arch-icon{width:80px;height:80px;display:flex;align-items:center;justify-content:center}
+.golden-divider .arch-icon svg{width:100%;height:100%;fill:var(--gold)}
+
+/* ---------- Services ---------- */
+.services{background:var(--cream);position:relative}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-bottom:50px}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr}}
+.svc-card{background:#fff;border:1px solid rgba(200,170,119,.4);padding:48px 36px 40px;text-align:center;transition:all .4s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
+.svc-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+.svc-card::after{content:"";position:absolute;top:20px;left:20px;right:20px;bottom:20px;border:1px solid rgba(200,170,119,.3);pointer-events:none;transition:all .4s ease}
+.svc-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.svc-card:hover::before{transform:scaleX(1)}
+.svc-card:hover::after{top:14px;left:14px;right:14px;bottom:14px;border-color:var(--gold)}
+.svc-icon{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 26px;font-size:38px;box-shadow:var(--shadow-gold);position:relative;z-index:1}
+.svc-card h3{font-family:'Tangerine',cursive;font-size:48px;font-weight:700;color:var(--ink);margin-bottom:14px;line-height:1;position:relative;z-index:1}
+.svc-card p{font-family:'Cormorant Garamond',serif;color:var(--ink);font-size:17px;line-height:1.75;margin-bottom:28px;font-weight:400;position:relative;z-index:1}
+.svc-card .btn{position:relative;z-index:1}
+
+/* ---------- Offerings (12 service tags - redesigned as elegant cards) ---------- */
+.offerings{background:var(--cream-light);position:relative;overflow:hidden}
+.offerings::before{content:"";position:absolute;top:0;left:0;right:0;height:200px;background:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/01/flower-bunch.png') no-repeat right top/180px;opacity:.4;pointer-events:none}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.offer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.offer-grid{grid-template-columns:1fr}}
+.offer{background:#fff;border:1px solid rgba(200,170,119,.4);padding:28px 26px;cursor:pointer;transition:all .35s ease;position:relative}
+.offer:hover{border-color:var(--gold);box-shadow:var(--shadow);transform:translateY(-6px);background:linear-gradient(180deg,#fff 0%,#fdf6eb 100%)}
+.offer-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.offer-num{font-family:'Tangerine',cursive;font-size:42px;color:var(--gold);font-weight:700;line-height:.8;width:48px}
+.offer h4{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:1px;line-height:1.2;flex:1}
+.offer .tagline{font-family:'Cookie',cursive;font-size:22px;color:var(--gold-dark);margin-bottom:8px;line-height:1.1}
+.offer p{font-size:14.5px;color:var(--ink-soft);line-height:1.7}
+
+/* ---------- Big CTA banner ---------- */
+.cta-banner{background:linear-gradient(rgba(43,30,16,.85),rgba(43,30,16,.92)),url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/palki-peacock-img.webp') center/cover;background-attachment:fixed;color:#fff;padding:90px 24px;text-align:center;position:relative}
+.cta-banner-inner{max-width:840px;margin:0 auto}
+.cta-banner h2{font-family:'Tangerine',cursive;font-weight:700;font-size:clamp(3rem,6vw,5rem);color:#fff;margin-bottom:18px;line-height:1}
+.cta-banner h2 small{display:block;font-family:'Cormorant Garamond',serif;font-size:.3em;color:var(--gold-light);font-weight:500;letter-spacing:3px;text-transform:uppercase;margin-top:14px}
+.cta-banner p{font-family:'Cormorant Garamond',serif;font-size:19px;color:#e9dec5;font-style:italic;max-width:600px;margin:0 auto 36px}
+.cta-banner-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+@media(max-width:780px){.cta-banner{background-attachment:scroll;padding:70px 20px}}
+
+/* ---------- Form section (Parchment Scroll) ---------- */
+.form-sec{background:var(--cream-light);position:relative;padding:90px 0}
+.form-sec-inner{position:relative;max-width:1200px;margin:0 auto;padding:0 24px}
+.form-head{text-align:center;margin-bottom:34px}
+.form-head .eyebrow{color:var(--gold-dark)}
+.scroll{position:relative;background:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/form-bg.webp') center/100% 100% no-repeat;padding:80px 110px 90px;min-height:600px;filter:drop-shadow(0 25px 40px rgba(43,30,16,.18))}
+@media(max-width:980px){.scroll{padding:60px 50px 70px;background-size:cover}}
+@media(max-width:680px){.scroll{padding:50px 22px 60px}}
+.scroll-title{text-align:center;margin-bottom:42px}
+.scroll-title h2{font-family:'Tangerine',cursive;font-weight:700;font-size:clamp(2.8rem,6vw,5.5rem);color:#3a2a18;line-height:1;margin-bottom:8px;letter-spacing:.5px}
+.scroll-title p{font-family:'Tangerine',cursive;font-weight:400;font-size:clamp(1.6rem,2.6vw,2.4rem);color:#3a2a18;line-height:1.2}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:680px){.form-row{grid-template-columns:1fr;gap:0}}
+.field{margin-bottom:22px;position:relative}
+.field label{display:block;font-family:'Poppins',sans-serif;font-size:14px;color:#2b1e10;margin-bottom:8px;font-weight:500}
+.field label .req{color:#e11336;margin-left:2px;font-weight:700}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border:1px solid rgba(200,170,119,.55);background:rgba(255,253,247,.7);font-family:'Poppins',sans-serif;font-size:15px;color:#2b1e10;transition:all .25s;border-radius:2px;box-shadow:inset 0 1px 3px rgba(0,0,0,.04)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-dark);background:#fff;box-shadow:0 0 0 3px rgba(200,170,119,.2),inset 0 1px 3px rgba(0,0,0,.04)}
+.field select{cursor:pointer;color:#9c8a6e}
+.field textarea{resize:vertical;min-height:120px}
+.scroll-submit{margin-top:8px}
+.scroll-submit button{background:#f47c5a;color:#fff;border:none;padding:13px 38px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:500;letter-spacing:.5px;border-radius:3px;cursor:pointer;transition:all .25s;box-shadow:0 4px 14px rgba(244,124,90,.35)}
+.scroll-submit button:hover{background:#e76847;transform:translateY(-2px);box-shadow:0 8px 22px rgba(244,124,90,.5)}
+.form-msg{margin-top:18px;font-family:'Cormorant Garamond',serif;font-size:15px;color:#5a4a36;font-style:italic}
+
+/* ---------- Gallery ---------- */
+.gallery{background:var(--ink);padding:0;position:relative;overflow:hidden}
+.gallery-slider{height:600px;position:relative}
+.gallery-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.4s ease}
+.gallery-slide.active{opacity:1}
+.gallery-slide::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,12,4,.6) 0%,transparent 40%)}
+.gallery-caption{position:absolute;bottom:50px;left:50%;transform:translateX(-50%);text-align:center;color:#fff;z-index:2;font-family:'Cormorant Garamond',serif;letter-spacing:6px;font-size:13px;text-transform:uppercase}
+.gal-arrows{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;padding:0 30px;transform:translateY(-50%);z-index:3}
+.gal-arrow{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:24px;transition:all .25s}
+.gal-arrow:hover{background:#fff;color:var(--ink)}
+.gal-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:3}
+.gal-dots button{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.4);transition:all .3s}
+.gal-dots button.active{background:#fff;width:28px;border-radius:5px}
+
+/* ---------- Testimonials ---------- */
+.testi{background:var(--cream-light);position:relative;overflow:hidden}
+.testi::before{content:"";position:absolute;top:30px;left:-50px;width:200px;height:200px;background:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/01/bird1.png') no-repeat center/contain;opacity:.4;pointer-events:none}
+.testi-wrap{position:relative;padding:0 60px}
+@media(max-width:780px){.testi-wrap{padding:0}}
+.testi-track{display:flex;gap:24px;overflow:hidden;scroll-snap-type:x mandatory}
+.testi-card{flex:0 0 calc(50% - 12px);background:#fff;border:1px solid rgba(200,170,119,.4);padding:38px 36px;scroll-snap-align:start;position:relative;transition:all .35s}
+@media(max-width:780px){.testi-card{flex:0 0 100%}}
+.testi-card::before{content:"\201C";position:absolute;top:-10px;left:24px;font-family:'Cormorant Garamond',serif;font-size:120px;color:var(--gold);line-height:1;opacity:.4}
+.testi-stars{color:var(--gold);font-size:18px;margin-bottom:18px;letter-spacing:3px;position:relative}
+.testi-text{font-family:'Cormorant Garamond',serif;color:var(--ink);font-size:17px;line-height:1.8;margin-bottom:26px;font-style:italic;position:relative;min-height:200px}
+.testi-meta{display:flex;align-items:center;gap:14px;padding-top:22px;border-top:1px solid rgba(200,170,119,.4)}
+.testi-avatar{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;flex-shrink:0;box-shadow:var(--shadow-gold)}
+.testi-name{font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--ink);font-size:17px}
+.testi-role{font-size:12px;color:var(--ink-soft);letter-spacing:.8px;text-transform:uppercase;margin-top:2px}
+.testi-arrows{display:flex;justify-content:center;gap:14px;margin-top:36px}
+.testi-arrow{width:50px;height:50px;border-radius:50%;background:#fff;border:1.5px solid var(--gold);color:var(--gold-dark);display:flex;align-items:center;justify-content:center;font-size:18px;transition:all .25s}
+.testi-arrow:hover{background:var(--gold);color:#fff;transform:scale(1.08)}
+
+/* ---------- Final CTA ---------- */
+.final-cta{background:var(--gold);padding:60px 24px;text-align:center;position:relative;overflow:hidden}
+.final-cta::before{content:"";position:absolute;top:-30px;left:-30px;right:-30px;bottom:-30px;border:2px solid rgba(255,255,255,.3);pointer-events:none}
+.final-cta h2{font-family:'Tangerine',cursive;font-weight:700;color:var(--ink);font-size:clamp(3rem,6vw,4.5rem);line-height:1;margin-bottom:8px}
+.final-cta .sub{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--ink-soft);font-style:italic;margin-bottom:30px;letter-spacing:2px;text-transform:uppercase}
+.final-cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final-cta .btn-dark{background:var(--ink);color:var(--gold-light);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.final-cta .btn-outline{background:rgba(255,255,255,.4);border-color:var(--ink);color:var(--ink)}
+.final-cta .btn-outline:hover{background:var(--ink);color:#fff}
+
+/* ---------- Album marquee ---------- */
+.album-marquee{background:var(--gold);padding:18px 0;overflow:hidden;border-top:1px solid rgba(255,255,255,.25)}
+.album-marquee-track{display:flex;gap:50px;animation:scroll-left 25s linear infinite;white-space:nowrap;width:max-content}
+.album-marquee-track span{font-family:'Tangerine',cursive;font-weight:700;font-size:32px;color:var(--ink);display:inline-flex;align-items:center;gap:24px}
+.album-marquee-track span::after{content:"❀";color:var(--maroon);font-size:18px}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--ink);color:#c9b88e;padding:70px 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:50px;margin-bottom:46px}
+@media(max-width:780px){.foot-grid{grid-template-columns:1fr;gap:36px}}
+.foot-logo img{max-height:60px;filter:brightness(0) invert(1) sepia(1) hue-rotate(15deg) saturate(.6);margin-bottom:20px}
+.foot-col p{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.8;color:#c9b88e;font-style:italic;max-width:380px}
+.foot-col h5{font-family:'Cormorant Garamond',serif;color:var(--gold-light);font-size:22px;font-weight:600;margin-bottom:18px}
+.foot-col a{font-size:14.5px;color:#c9b88e;display:flex;align-items:center;gap:10px;margin-bottom:12px;transition:color .25s}
+.foot-col a:hover{color:var(--gold-light)}
+.foot-bottom{padding-top:28px;border-top:1px solid rgba(200,170,119,.2);text-align:center;font-size:13px;color:#9c8a60;letter-spacing:.5px}
+
+/* ---------- Floating WhatsApp (matches Alankaran original) ---------- */
+.et_pb_icon_0{position:fixed;bottom:30px;right:15px;top:auto;left:auto;text-align:center;z-index:80;animation:fabPulse 2.4s infinite;transition:transform .2s}
+.et_pb_icon_0:hover{transform:scale(1.08)}
+.et_pb_icon_0 .et_pb_icon_wrap{background-color:#28d146;border-radius:10px;overflow:hidden;padding:8px 10px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(40,209,70,.55)}
+.et_pb_icon_0 .et-pb-icon{color:#fff;display:inline-flex;align-items:center;justify-content:center}
+.et_pb_icon_0 .et-pb-icon svg{width:40px;height:40px;fill:#fff}
+@keyframes fabPulse{0%,100%{filter:drop-shadow(0 10px 28px rgba(40,209,70,.55))}50%{filter:drop-shadow(0 10px 28px rgba(40,209,70,.55)) drop-shadow(0 0 16px rgba(40,209,70,.4))}}
+
+/* ---------- Sticky mobile CTA ---------- */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;padding:10px 14px;box-shadow:0 -8px 24px rgba(0,0,0,.12);z-index:70;gap:10px;border-top:2px solid var(--gold)}
+@media(max-width:780px){
+  .sticky-cta{display:flex}
+  body{padding-bottom:78px}
+  .et_pb_icon_0{bottom:86px;right:12px}
+  .et_pb_icon_0 .et-pb-icon svg{width:32px;height:32px}
+  .et_pb_icon_0 .et_pb_icon_wrap{padding:7px 9px}
+}
+.sticky-cta .btn{flex:1;padding:14px 10px;font-size:12px;letter-spacing:1px}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <img src="https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/01/Alankaran-Landing-page_0000s_0026_Layer-28-f.webp" alt="Alankaran Events — Creating Magical Events">
+    </a>
+    <div class="header-actions">
+      <a href="tel:8977611886" class="btn header-call">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1Z"/></svg>
+        <span>Call Now</span>
+      </a>
+      <a href="#wedding-deets" class="btn header-deets">Get Package Details</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" style="background-image:url('https://events.alankaran.com/wp-content/uploads/2024/10/wedding-slider-img-1.webp')"></div>
+    <div class="hero-slide" style="background-image:url('https://events.alankaran.com/wp-content/uploads/2025/02/wedding-slider-img-4-980x653-1.webp')"></div>
+    <div class="hero-slide" style="background-image:url('https://events.alankaran.com/wp-content/uploads/2024/10/wedding-slider-img-2.webp')"></div>
+    <div class="hero-slide" style="background-image:url('https://events.alankaran.com/wp-content/uploads/2024/10/wedding-slider-img-6.webp')"></div>
+    <div class="hero-slide" style="background-image:url('https://events.alankaran.com/wp-content/uploads/2024/10/wedding-slider-img-3.webp')"></div>
+    <div class="hero-slide" style="background-image:url('https://events.alankaran.com/wp-content/uploads/2024/10/wedding-slider-img-7.webp')"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-tag">Luxury Wedding Planning &amp; Decor</span>
+      <h1>
+        <span class="script">Let's Make Your</span>
+        Wedding Dreams<br>Come True.
+      </h1>
+      <p class="hero-sub">A day that arrives once in a lifetime deserves your presence — not your pressure. We design weddings that feel like home, look like a dream, and unfold without a single stress on your shoulders.</p>
+      <div class="hero-actions">
+        <a href="#wedding-deets" class="btn btn-primary btn-lg">
+          Let's Make Your Wedding Dreams Come True
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+        </a>
+        <a href="tel:8977611886" class="btn btn-outline btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1Z"/></svg>
+          Talk to a Planner
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">Scroll Down</div>
+  <div class="hero-dots" id="heroDots">
+    <button class="active" data-i="0" aria-label="Slide 1"></button>
+    <button data-i="1" aria-label="Slide 2"></button>
+    <button data-i="2" aria-label="Slide 3"></button>
+    <button data-i="3" aria-label="Slide 4"></button>
+    <button data-i="4" aria-label="Slide 5"></button>
+    <button data-i="5" aria-label="Slide 6"></button>
+  </div>
+</section>
+
+<!-- Marquee CTA -->
+<a href="#wedding-deets" class="marquee-cta">
+  <div class="marquee-track">
+    <span>Let's Make Your Wedding Dreams Come True</span>
+    <span>Book a Free Consultation</span>
+    <span>500+ Weddings Designed</span>
+    <span>Let's Make Your Wedding Dreams Come True</span>
+    <span>Book a Free Consultation</span>
+    <span>500+ Weddings Designed</span>
+  </div>
+</a>
+
+<!-- About -->
+<section class="about reveal">
+  <div class="container">
+    <div class="about-inner">
+      <span class="eyebrow with-line">Who We Are</span>
+      <h2>About Alankaran</h2>
+      <div class="about-arch">
+        <p>Make your dream wedding a reality with <strong>Alankaran</strong>, a team of professional wedding planners in Hyderabad. As a trusted wedding event planner and luxury wedding planner, we specialize in creating seamless and unforgettable celebrations.</p>
+        <p>Our expertise in wedding event management allows us to handle everything with precision and creativity. From intimate gatherings to grand destination celebrations, we are recognized among the top wedding planning companies for our elegance, efficiency, and attention to detail. Choose Alankaran for refined wedding coordination services, exceptional wedding decoration services, and a stress-free journey to your perfect day.</p>
+        <div class="about-cta">
+          <a href="#wedding-deets" class="btn btn-primary">
+            Enquire Now
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Couples decor row -->
+<section class="couples">
+  <div class="couples-grid">
+    <div class="couple-frame"><img src="https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/couple1-img.webp" alt="Wedding couple"></div>
+    <div class="couple-frame"><img src="https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/couple2-img.webp" alt="Wedding couple"></div>
+    <div class="couple-frame"><img src="https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/couple3-img.webp" alt="Wedding couple"></div>
+  </div>
+</section>
+
+<!-- Planning Mood -->
+<section class="planning reveal">
+  <div class="container planning-inner">
+    <span class="eyebrow with-line">Our Promise</span>
+    <h2>Let's Get You in the Planning Mood</h2>
+    <div class="flourish">❦</div>
+    <p>A day that arrives once in a lifetime deserves your presence, not your pressure. While you live every emotion, we take care of your entire wedding event management.</p>
+    <p>If you prefer partial assistance, our wedding planning consultation allows you to choose specific areas where you want our expertise to shape your celebration. Whether complete planning or selective support, our professional wedding planners ensure your vision comes to life effortlessly.</p>
+
+    <div class="planning-cta">
+      <a href="#wedding-deets" class="btn btn-primary btn-lg">
+        Let the Wedding Bells Ring!
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+      </a>
+    </div>
+
+    <div class="golden-divider">
+      <div class="line"></div>
+      <div class="arch-icon">
+        <svg viewBox="0 0 100 100"><path d="M50 5 C 25 5, 15 30, 15 55 L 15 95 L 35 95 L 35 55 C 35 40, 42 30, 50 30 C 58 30, 65 40, 65 55 L 65 95 L 85 95 L 85 55 C 85 30, 75 5, 50 5 Z"/></svg>
+      </div>
+      <div class="line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services reveal" style="padding-top:30px">
+  <div class="container">
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16l7-3 7 3Z"/></svg>
+        </div>
+        <h3>Wedding Planning</h3>
+        <p>Our full wedding planning services begin with an elaborate and thoughtful master plan, including expert destination wedding planning for celebrations beyond borders. Every ritual, celebration, and custom is designed with meticulous attention to detail. From budgeting to vendor alignment, we create a clear framework that ensures smooth execution and perfect coordination.</p>
+        <a href="#wedding-deets" class="btn btn-gold">Enquire Now</a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><path d="M12 2 9 9H2l5.5 4-2 7L12 16l6.5 4-2-7L22 9h-7Z"/></svg>
+        </div>
+        <h3>Design &amp; Decor</h3>
+        <p>We create visually stunning environments that reflect your personality and preferences. Whether your style is royal, boho, elegant, traditional, modern, or artsy, our wedding decoration services bring your vision to life. From floral aesthetics to bespoke wedding stage decoration, every element is curated with care, colour harmony, and creative flair.</p>
+        <a href="#wedding-deets" class="btn btn-gold">Enquire Now</a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <h3>Logistics &amp; Coordination</h3>
+        <p>Flawless execution is the heart of a perfect celebration. Our wedding coordination services ensure guests are received on time, events run seamlessly, and every detail is supervised throughout the wedding days. With expert wedding event management, you can relax knowing everything is arranged and managed to perfection.</p>
+        <a href="#wedding-deets" class="btn btn-gold">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 Offerings -->
+<section class="offerings reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow with-line">Everything Included</span>
+      <h2>What We Take Care Of <small>12 Things You'll Never Worry About Again</small></h2>
+    </div>
+
+    <div class="offer-grid">
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">01</div><h4>Budget Management</h4></div>
+        <div class="tagline">Arranging your wedding dream</div>
+        <p>Based on the preferences of the couple, we will allocate funds to each wedding segment of the masterplan and suggest vendors within that.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">02</div><h4>Destination / Venue</h4></div>
+        <div class="tagline">Selecting the palace of your dreams</div>
+        <p>Whether it's an exotic destination or a place in the heart/outskirts of your city, we will source a list of venues that resemble your vision &amp; personality.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">03</div><h4>Hospitality &amp; Guest Accommodation</h4></div>
+        <div class="tagline">Their wish is our command</div>
+        <p>Booking check, Room allotment check, Reminders check, Greetings check, Unforgettable Hospitality check. You can completely rely on us with this checklist.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">04</div><h4>Invites / Gifts</h4></div>
+        <div class="tagline">Sending our pigeons &amp; tokens of love</div>
+        <p>We thoughtfully craft the invites to be sent out to your beloveds. We make sure they take back with them, a bundle of memories &amp; keepsakes.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">05</div><h4>Photography / Videography</h4></div>
+        <div class="tagline">Your story, timelessly captured</div>
+        <p>When we long to relive the good times spent, we open albums releasing nostalgic scents. The loud cackles, the tears of joy &amp; those poses — we'll capture them all!</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">06</div><h4>Other Vendor Facilities</h4></div>
+        <div class="tagline">Teaming up with the best of the lot</div>
+        <p>The make-up artists, stylists, choreographers, caterers, priests &amp; decorators — we'll get you the best. You live your wedding days while we work at your behest.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">07</div><h4>Logistics</h4></div>
+        <div class="tagline">Nothing falls short in our Mehman-Nawazi</div>
+        <p>From booking tickets to picking up/dropping service, our team will ensure a seamless experience for every guest on the list.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">08</div><h4>Designing &amp; Decor</h4></div>
+        <div class="tagline">Curating an aesthetic vibe</div>
+        <p>From sealing colour palettes, textures, props &amp; florals to binding every design aspect in a thematic-cohesive feel, you'll be a part of this creative journey!</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">09</div><h4>Couple Couture</h4></div>
+        <div class="tagline">The wedding look that'll be remembered</div>
+        <p>One for each tradition, minimal and extravagant, tinted in pastels and deeper shades — you'll be dressed up in elegance &amp; grace.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">10</div><h4>Food &amp; Beverage</h4></div>
+        <div class="tagline">Waah! Kya swaad hai!</div>
+        <p>Drawing cue from your suggestions, we will put together a buffet that not only fills their buds with flavors but satiates their very soul.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">11</div><h4>Entertainment</h4></div>
+        <div class="tagline">Tuning into your frequency</div>
+        <p>Let your fam &amp; friends break loose while we set the band, baaja, baraat grooves. The stage will be all-decked, you just have to shake that leg.</p>
+      </div>
+      <div class="offer">
+        <div class="offer-head"><div class="offer-num">12</div><h4>Security / Coordination &amp; Management</h4></div>
+        <div class="tagline">We got your back</div>
+        <p>It's time to chill &amp; relax — our solid team will manage &amp; coordinate every vendor, guest, venue head, caterer and decorator on the wedding field.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:60px">
+      <a href="#wedding-deets" class="btn btn-primary btn-lg">
+        Book Your Free Wedding Planning Consultation
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner with parallax -->
+<section class="cta-banner reveal">
+  <div class="cta-banner-inner">
+    <span class="eyebrow with-line" style="color:var(--gold-light)">Don't Wait</span>
+    <h2>Only A Few Dates Left <small>For the 2026 Wedding Season</small></h2>
+    <p>We take on only 36 weddings a year to keep every detail flawless. Lock your date with a free, no-pressure consultation today.</p>
+    <div class="cta-banner-actions">
+      <a href="#wedding-deets" class="btn btn-primary btn-lg">Reserve My Date</a>
+      <a href="tel:8977611886" class="btn btn-outline btn-lg">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1Z"/></svg>
+        Call 89776 11886
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Form Section (Parchment Scroll) -->
+<section class="form-sec reveal" id="wedding-deets">
+  <div class="form-sec-inner">
+    <div class="form-head">
+      <span class="eyebrow with-line">Free Consultation</span>
+    </div>
+
+    <div class="scroll">
+      <div class="scroll-title">
+        <h2>'Fill us in' with your wedding -deets!</h2>
+        <p>Let's have a dialogue on how you want your dream day to be</p>
+      </div>
+
+      <form onsubmit="event.preventDefault();document.getElementById('formMsg').innerHTML='<strong style=&quot;color:#7a1d2e&quot;>✓ Thank you! A senior planner will reach out within 24 hours.</strong>';this.reset();">
+
+        <div class="field">
+          <label>Name <span class="req">*</span></label>
+          <input type="text" required>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" required>
+          </div>
+          <div class="field">
+            <label>Phone Number <span class="req">*</span></label>
+            <input type="tel" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label>Event <span class="req">*</span></label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Budget_ <span class="req">*</span></label>
+            <select required>
+              <option value="">Please Select</option>
+              <option>Under ₹10 Lakhs</option>
+              <option>₹10 – 25 Lakhs</option>
+              <option>₹25 – 50 Lakhs</option>
+              <option>₹50 Lakhs – 1 Crore</option>
+              <option>Above ₹1 Crore</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label>Venue <span class="req">*</span></label>
+            <input type="text" required>
+          </div>
+          <div class="field">
+            <label>Date <span class="req">*</span></label>
+            <input type="date" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="scroll-submit">
+          <button type="submit">Submit</button>
+          <p class="form-msg" id="formMsg"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+  <div class="gallery-slider" id="gallerySlider">
+    <div class="gallery-slide active" style="background-image:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/10/slider1-img.webp')"></div>
+    <div class="gallery-slide" style="background-image:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2025/02/wedding-new-img5.jpg')"></div>
+    <div class="gallery-slide" style="background-image:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2025/02/wedding-new-img4.jpg')"></div>
+    <div class="gallery-slide" style="background-image:url('https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2025/02/wedding-new-img3.jpg')"></div>
+
+    <div class="gallery-caption">Stories from Drishya Weddings</div>
+
+    <div class="gal-arrows">
+      <button class="gal-arrow" id="galPrev" aria-label="Previous">‹</button>
+      <button class="gal-arrow" id="galNext" aria-label="Next">›</button>
+    </div>
+
+    <div class="gal-dots" id="galDots">
+      <button class="active" data-i="0"></button>
+      <button data-i="1"></button>
+      <button data-i="2"></button>
+      <button data-i="3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testi reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow with-line">Real Reviews</span>
+      <h2>Happy Wed's Wordings <small>240+ Couples. Zero Regrets.</small></h2>
+      <div class="flourish">❦</div>
+    </div>
+
+    <div class="testi-wrap">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Chaitanya managed our event beyond what we expected. His orientation to service, creative suggestion and flawless execution of our event just blew our mind. We selected Alankaran after speaking to a whole lot of event management firms and it was a five star experience all the way. I would go as far as saying he is the best in Hyderabad. All the best Chaitanya and team — you are forever in our event plans from now.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">R</div>
+            <div><div class="testi-name">Regina Thomas</div><div class="testi-role">Hyderabad Wedding</div></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">While looking for a decent wedding planner, we met Chaitanya and decided to take it forward in the first meeting only. We were inspired by his eye for details, meticulous thought process and feedback loops made our event successful. From the wedding decor, the photo shoot and overall flow of the event turned out very well. We were happy to work with team Alankaran.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">A</div>
+            <div><div class="testi-name">Avina Rawal</div><div class="testi-role">Grand Celebration</div></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Our wedding date was confirmed just 12 days before and it was such a hectic period. Chandrika and Chaitanya were super patient with all our questions. Chandrika always made sure I had everything I needed — she even discussed minute things like hair accessories with me. I couldn't have asked for a better wedding planner. I found a friend who truly cared for my happiness during the most important time of my life.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">S</div>
+            <div><div class="testi-name">Samuel Peterson</div><div class="testi-role">Intimate Wedding</div></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Chaitanya and team did a spectacular job in coming up with the concept and executing it to perfection. It was flawless and every guest was spellbound by the sheer beauty the team was able to create. On the day of the event there were more than ten workers from Alankaran and each of them knew exactly what to do. I would 1000% recommend Alankaran.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">N</div>
+            <div><div class="testi-name">Nidhi Pati</div><div class="testi-role">Destination Wedding</div></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">CK the owner of Alankaran was very professional and totally prepared. He made sure the job got done. And on time. He will share his ideas but isn't pushy. He wants to hear your side of the story and your ideas. His calm and ever smiling demeanor makes you feel assured and builds your confidence. His entire team is very helpful. Would love to work with him again.</p>
+          <div class="testi-meta">
+            <div class="testi-avatar">N</div>
+            <div><div class="testi-name">Neha Agarwal</div><div class="testi-role">Luxury Wedding</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-arrows">
+        <button class="testi-arrow" id="testiPrev" aria-label="Previous">‹</button>
+        <button class="testi-arrow" id="testiNext" aria-label="Next">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta reveal" style="padding:80px 24px">
+  <h2>Let the Wedding Bells Ring!</h2>
+  <div class="sub">Swipe through our work-album</div>
+  <div class="final-cta-actions">
+    <a href="#wedding-deets" class="btn btn-dark btn-lg">
+      Let the Wedding Bells Ring!
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 5l7 7-7 7v-4H3v-6h11V5z"/></svg>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=918977611886&text=Hi!+Can+you+provide+me+with+more+information+on+your+wedding+planning+services%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24Zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981Z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</section>
+
+<!-- Album marquee -->
+<div class="album-marquee">
+  <div class="album-marquee-track">
+    <span>Swipe Through Our Work-Album</span>
+    <span>500+ Dream Weddings</span>
+    <span>Designed With Love in Hyderabad</span>
+    <span>Swipe Through Our Work-Album</span>
+    <span>500+ Dream Weddings</span>
+    <span>Designed With Love in Hyderabad</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-col foot-logo">
+        <img src="https://cdn-ileijhn.nitrocdn.com/hNnabKojCGdRGsOmHjDyQNsPlsqPNDLY/assets/images/optimized/rev-5fbd114/events.alankaran.com/wp-content/uploads/2024/01/Alankaran-Landing-page_0000s_0026_Layer-28-f.webp" alt="Alankaran">
+        <p>Hyderabad's luxury wedding atelier. Designing celebrations that feel like home and look like dreams — creating magical events since 2012.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Get In Touch</h5>
+        <a href="tel:8977611886">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1Z"/></svg>
+          +91 89776 11886
+        </a>
+        <a href="mailto:chaitanya@alankaran.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+          chaitanya@alankaran.com
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=918977611886" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24Z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="foot-col">
+        <h5>Our Services</h5>
+        <a href="#wedding-deets">→ Wedding Planning</a>
+        <a href="#wedding-deets">→ Design &amp; Decor</a>
+        <a href="#wedding-deets">→ Destination Weddings</a>
+        <a href="#wedding-deets">→ Logistics &amp; Coordination</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © 2026 Alankaran Events Management • Creating Magical Events
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp (matches Alankaran original structure) -->
+<div class="et_pb_module et_pb_icon et_pb_icon_0">
+  <a href="https://api.whatsapp.com/send/?phone=918977611886&text=Hi%21+Can+you+provide+me+with+more+information+on+your+wedding+planning+services%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span class="et_pb_icon_wrap">
+      <span class="et-pb-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24Zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981 3.86-1.013Zm3.182-5.852c.135.225.39.31.715.16.323-.15 1.917-.788 2.183-.872.265-.084.46-.13.654.13.195.262.747.872.916 1.05.17.18.34.2.633.067.292-.134 1.232-.453 2.346-1.444.866-.77 1.452-1.722 1.622-2.014.17-.292.018-.45-.115-.583-.12-.12-.292-.31-.434-.464-.143-.156-.19-.262-.286-.434-.094-.18-.047-.336.026-.464.073-.13.654-1.572.896-2.155.236-.564.477-.487.654-.497l.554-.01c.18 0 .473.067.722.336.247.262.945.92.945 2.245s-.967 2.604-1.102 2.785c-.135.18-1.9 2.901-4.602 4.069-.642.276-1.144.443-1.535.567-.645.205-1.234.176-1.7.107-.518-.077-1.594-.65-1.82-1.276-.226-.625-.226-1.156-.158-1.273.068-.117.247-.18.426-.27Z"/></svg>
+      </span>
+    </span>
+  </a>
+</div>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta">
+  <a href="tel:8977611886" class="btn btn-dark">📞 Call Now</a>
+  <a href="#wedding-deets" class="btn btn-primary">Free Consultation</a>
+</div>
+
+<script>
+// Header scrolled state
+(function(){
+  const h = document.getElementById('header');
+  const toggle = () => {
+    if(window.scrollY > 80) h.classList.add('scrolled');
+    else h.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', toggle, {passive:true});
+  toggle();
+})();
+
+// Hero slider
+(function(){
+  const slides = document.querySelectorAll('#heroSlides .hero-slide');
+  const dots = document.querySelectorAll('#heroDots button');
+  let i = 0;
+  function go(n){
+    slides[i].classList.remove('active');
+    dots[i].classList.remove('active');
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add('active');
+    dots[i].classList.add('active');
+  }
+  dots.forEach(d => d.addEventListener('click', () => go(+d.dataset.i)));
+  setInterval(() => go(i + 1), 4500);
+})();
+
+// Gallery slider
+(function(){
+  const slides = document.querySelectorAll('#gallerySlider .gallery-slide');
+  const dots = document.querySelectorAll('#galDots button');
+  let i = 0;
+  function go(n){
+    slides[i].classList.remove('active');
+    dots[i].classList.remove('active');
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add('active');
+    dots[i].classList.add('active');
+  }
+  dots.forEach(d => d.addEventListener('click', () => go(+d.dataset.i)));
+  document.getElementById('galPrev').addEventListener('click', () => go(i - 1));
+  document.getElementById('galNext').addEventListener('click', () => go(i + 1));
+  setInterval(() => go(i + 1), 4500);
+})();
+
+// Testimonial scroll
+(function(){
+  const track = document.getElementById('testiTrack');
+  const card = track.querySelector('.testi-card');
+  const next = document.getElementById('testiNext');
+  const prev = document.getElementById('testiPrev');
+  const step = () => card.getBoundingClientRect().width + 24;
+  next.addEventListener('click', () => track.scrollBy({left:step(),behavior:'smooth'}));
+  prev.addEventListener('click', () => track.scrollBy({left:-step(),behavior:'smooth'}));
+  track.style.overflow = 'auto';
+  track.style.scrollbarWidth = 'none';
+})();
+
+// Reveal on scroll
+(function(){
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
